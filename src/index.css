@@ -1,0 +1,291 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 1.5em;
+  color: #f0f8ff;
+}
+
+nav a {
+  color: #add8e6;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #104e8b;
+}
+
+/* Hero Section */
+/* Hero section with background image */
+.hero {
+  position: relative;
+  background-image: url('country.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Add a subtle text shadow for readability */
+.hero-content h2,
+.hero-content p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+}
+
+
+/* Country Info Styling */
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid blue;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.centered img {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.centered h2 {
+  color: darkblue;
+}
+
+.centered p {
+  margin: 5px 0;
+}
+
+/* Popular Countries Section */
+.popular-countries {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f2ff;
+}
+
+.popular-countries h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  width: 150px; /* Set a consistent width for all cards */
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 40%; /* Makes the image smaller than the card */
+  height: auto;
+  border-radius: 8px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.2em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #333;
+  margin: 5px 0;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #104e8b;
+}
+.country-card {
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country-card h2 {
+  color: #007BFF;
+}
+
+.country-card img {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.discover-places {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f8ff;
+}
+
+.discover-places h1 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.discover-places .subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.discover-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.discover-card {
+  background-color: #fff;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  text-align: center;
+  padding: 20px;
+}
+
+.discover-card:hover {
+  transform: scale(1.05);
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.discover-card h2 {
+  font-size: 1.5em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.discover-card p {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a {
+  color: #add8e6;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-media a:hover {
+  color: white;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}

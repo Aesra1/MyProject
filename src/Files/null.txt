@@ -1,0 +1,19 @@
+Capital: Madrid
+
+Area: 505,992 km²
+
+Continent: Europe
+
+Region: Europe
+
+Subregion: Southern Europe
+
+Population: 47,351,567
+
+Languages: Spanish, Catalan, Basque, Galician
+
+Time Zones: UTC, UTC+01:00
+
+Location: Lat: 40, Long: -4
+
+Maps: View on Google Maps hi

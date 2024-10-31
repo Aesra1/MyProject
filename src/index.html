@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Country Info</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🌎 Exploreee Country</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="country_input" placeholder="Enter country name">
+            <button onclick="buttonClicked()">Search</button>
+        </div>
+        <nav>
+            <a href="crud.html">SavedFiles</a>
+        </nav>
+    </header>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Explore Countries</h2>
+            <p>Culture, Travel, Information</p>
+            
+        </div>
+    </section>
+<!--Popular negara -->
+<section class="popular-countries">
+    <h2>Popular Countries</h2>
+    <div class="cards">
+        <div class="card" onclick="fetchCountryData('France')">
+            <h3>France</h3>
+            <img src="france.svg">
+            <p><strong>Capital:</strong> Paris</p>
+            <p><strong>Region:</strong> Europe</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card" onclick="fetchCountryData('Italy')">
+            <h3>Italy</h3>
+            <img src="italy.png">
+            <p><strong>Capital:</strong> Rome</p>
+            <p><strong>Region:</strong> Europe</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card" onclick="fetchCountryData('Spain')">
+            <h3>Spain</h3>
+            <img src="spain.png">
+            <p><strong>Capital:</strong> Madrid</p>
+            <p><strong>Region:</strong> Europe</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card" onclick="fetchCountryData('Japan')">
+            <h3>Japan</h3>
+            <img src="japan.png">
+            <p><strong>Capital:</strong> Tokyo</p>
+            <p><strong>Region:</strong> Asia</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card" onclick="fetchCountryData('South Korea')">
+            <h3>South Korea</h3>
+            <img src="korea.png">
+            <p><strong>Capital:</strong> Seoul</p>
+            <p><strong>Region:</strong> Asia</p>
+            <button>Explore</button>
+        </div>
+    </div>
+</section>
+<!-- Country information -->
+<div  style="background-image: url('passports.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"> 
+    <div id="country-info" class="centered">
+        <h2 id="country_name"></h2>
+        <p><strong>Flag:</strong></p>
+        <img id="flag" width="100">
+        <p><strong>Coat of Arms:</strong></p>
+        <img id="coat_of_arms" width="100">
+        <p><strong>Capital:</strong> <span id="capital"></span></p>
+        <p><strong>Area:</strong> <span id="area"></span></p>
+        <p><strong>Continent:</strong> <span id="continent"></span></p>
+        <p><strong>Region:</strong> <span id="region"></span></p>
+        <p><strong>Subregion:</strong> <span id="subregion"></span></p>
+        <p><strong>Population:</strong> <span id="population"></span></p>
+        <p><strong>Languages:</strong> <span id="language"></span></p>
+        <p><strong>Time Zones:</strong> <span id="timezone"></span></p>
+        <p><strong>Location:</strong> <span id="location"></span></p>
+        <p><strong>Maps:</strong> <span id="map_link"></span></p>
+
+        <!--Create function -->
+        <div class="mainWrapper">
+            <h1>File Operations</h1>
+    
+            <form>
+                <div class="form-group">   
+                    <label>File Name</label>
+                    <input id="fileName" type="text" class="form-control" placeholder="Enter file name">
+                </div>
+                <div class="form-group">
+                    <label>Content</label>
+                    <textarea id="fileContents" class="form-control" rows="5" placeholder="copy information above..."></textarea>
+                </div>
+                <button id="btnCreate" class="btn btn-default">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Gambar scenery -->
+    <section class="discover-places">
+        <h1>Discover exciting places</h1>
+        <p class="subtitle">Let's explore the world by yourself experiencing scenery and culture.</p>
+        <div class="discover-cards">
+            <div class="discover-card">
+                <img src="kremlin.jpg" alt="Norway">
+                <h2>RUSSIA</h2>
+                <p>Learning the history by going Moscow,Kremlin.</p>
+            </div>
+            <div class="discover-card">
+                <img src="ireland.webp" alt="Golden Gate">
+                <h2>IRELAND</h2>
+                <p>Discover the beautiful floral and fauna here.</p>
+            </div>
+            <div class="discover-card">
+                <img src="german.jpg" alt="Japan">
+                <h2>GERMANY</h2>
+                <p>From scaling the iconic peaks to exploring rich culture.</p>
+            </div>
+        </div>
+    </section>
+</div>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://www.facebook.com/">Facebook</a> |
+                <a href="https://www.instagram.com/">Instagram</a> |
+                <a href="https://x.com/i/flow/login">Twitter</a>
+            </div>
+            <div class="footer-info">
+                <p>Contact us: explore@countryinfo.com</p>
+                <p>&copy; 2024 Exploreee Country. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
